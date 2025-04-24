@@ -10,7 +10,6 @@
 class message_handler {
   public:
     static void messageHandler(MQTT::MessageData &md);
-
 };
 
 

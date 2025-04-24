@@ -17,13 +17,13 @@ private:
     MQTT::Client<IPStack, Countdown> client;
 
 public:
-    Mqtt_tool(const string &ssid, const string &pw);
+    Mqtt_tool(const char *ssid, const char *pw);
 
-    void connect_MQTT(const string &hostname, int port, const string &clientID);
+    void connect_MQTT(const char *hostname, int port, const char *clientID);
 
-    void subscribe_MQTT(const std::string &mqtt_topic, MQTT::QoS qos_level);
+    void subscribe_MQTT(const char *mqtt_topic, MQTT::QoS qos_level);
 
-    void publish_MQTT(MQTT::QoS qos_level, std::string mqtt_topic, void *mqtt_message,
+    void publish_MQTT(MQTT::QoS qos_level, const char *mqtt_topic, void *mqtt_message,
                      int mqtt_message_len);
 
     int yield_MQTT(int yield_time);
