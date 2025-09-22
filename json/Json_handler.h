@@ -10,7 +10,7 @@
 
 #ifndef JSON_HANDLER_H
 #define JSON_HANDLER_H
-#include <core_json.h>
+#include "json_handler.h"
 #define JSON_BUFFER_SIZE 256
 
 class Json_handler {
@@ -34,3 +34,4 @@ class Json_handler {
 
 
 #endif //JSON_HANDLER_H
+
